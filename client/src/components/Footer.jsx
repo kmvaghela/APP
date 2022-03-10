@@ -9,6 +9,8 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PaymentImage from "../assets/payment.PNG";
 import { mobile } from "../responsive";
+import { Link } from "react-router-dom";
+
 const Container = styled.div`
   display: flex;
   ${mobile({ flexDirection: "column" })}
@@ -110,7 +112,11 @@ const Footer = () => {
       <Center>
         <Title>Useful Links</Title>
         <List>
-          <ListItem>Home</ListItem>
+          <ListItem>
+            <Link to="/" style={{ color: "black", textDecoration: "none" }}>
+              Home
+            </Link>
+          </ListItem>
           <ListItem>Cart</ListItem>
           <ListItem>Man Fashion</ListItem>
           <ListItem>Woman Fashion</ListItem>

@@ -91,16 +91,22 @@ const Navbar = () => {
         <Right>
           {!loggedIn ? (
             <>
-              <Link to="/register">
+              <Link
+                to="/register"
+                style={{ color: "black", textDecoration: "none" }}
+              >
                 <MenuItem>REGISTER</MenuItem>
               </Link>
-              <Link to="/login">
+              <Link
+                to="/login"
+                style={{ color: "black", textDecoration: "none" }}
+              >
                 <MenuItem>SIGN IN</MenuItem>
               </Link>
             </>
           ) : (
-            <Link to="/">
-              <MenuItem onClick={handleClick}>Logout</MenuItem>
+            <Link to="/" style={{ color: "black", textDecoration: "none" }}>
+              <MenuItem onClick={handleClick}>LOGOUT</MenuItem>
             </Link>
           )}
 
